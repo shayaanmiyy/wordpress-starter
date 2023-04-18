@@ -2,6 +2,10 @@
 
 This is a starter kit for WordPress projects at Digital Polygon. It is based on the [Pantheon WordPress Composer Managed Upstream](https://github.com/pantheon-systems/wordpress-composer-managed). Read the entirety of this file before proceeding.
 
+Links:
+
+- [Pantheon Bedrock Early Access](https://docs.pantheon.io/guides/wordpress-composer/pre-ga/wordpress-composer-managed)
+
 ## Setup
 
 1. Clone the project.
