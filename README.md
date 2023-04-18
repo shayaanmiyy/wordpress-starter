@@ -1,3 +1,14 @@
+# Digital Polygon WordPress Starter Kit
+
+This is a starter kit for WordPress projects at Digital Polygon. It is based on the Pantheon WordPress Composer Managed Upstream. Read the entirety of this file before proceeding.
+
+## Setup
+
+1. Clone the project.
+2. Change into the project directory.
+3. Run `ddev init`.
+4. Navigate to `/wp-admin` to log in with `admin:admin`.
+
 # Composer-enabled WordPress template
 
 [![Early Access](https://img.shields.io/badge/Pantheon-Early%20Access-yellow?logo=pantheon&color=FFDC28)](https://pantheon.io/docs/oss-support-levels#early-access)

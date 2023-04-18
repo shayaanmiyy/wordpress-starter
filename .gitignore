@@ -49,8 +49,14 @@ web/xmlrpc.php
 # that pull from Packagist or custom GitHub repositories.
 /vendor
 
+# Ignore scratch files.
+scratch/
+
 # Any local WP-CLI rules should not be version controlled.
 wp-cli.local.yml
+
+# DDEV local files.
+.ddev/docker-compose.local.yaml
 
 # :::::::::::::::::::::: Pantheon Additions ::::::::::::::::::::::
 
@@ -154,3 +160,7 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+
+# JetBrains #
+#############
+.idea/
