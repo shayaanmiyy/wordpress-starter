@@ -1,6 +1,6 @@
 # Digital Polygon WordPress Starter Kit
 
-This is a starter kit for WordPress projects at Digital Polygon. It is based on the Pantheon WordPress Composer Managed Upstream. Read the entirety of this file before proceeding.
+This is a starter kit for WordPress projects at Digital Polygon. It is based on the [Pantheon WordPress Composer Managed Upstream](https://github.com/pantheon-systems/wordpress-composer-managed). Read the entirety of this file before proceeding.
 
 ## Setup
 
