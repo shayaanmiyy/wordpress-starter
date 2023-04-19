@@ -13,6 +13,24 @@ Links:
 3. Run `ddev init`.
 4. Navigate to `/wp-admin` to log in with `admin:admin`.
 
+## Code scans
+
+### Coding standards (PHPCS)
+
+#### To run the standard scan:
+
+1. Change to the project root directory.
+2. Run `docker run -it --rm -v $PWD:/app ghcr.io/lpeabody/phpcs-wordpress:2.3.0`.
+
+#### To modify the scan:
+
+1. Copy the `phpcs.xml.dist` file to `phpcs.xml`.
+2. Make modifications as necessary in `phpcs.xml`.
+3. Run `docker run -it --rm -v $PWD:/app ghcr.io/lpeabody/phpcs-wordpress:2.3.0`.
+
+To contribute the changes back, copy/paste what is needed from phpcs.xml into phpcs.xml.dist, commit your changes and
+make a pull request.
+
 # Composer-enabled WordPress template
 
 [![Early Access](https://img.shields.io/badge/Pantheon-Early%20Access-yellow?logo=pantheon&color=FFDC28)](https://pantheon.io/docs/oss-support-levels#early-access)

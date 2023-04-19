@@ -21,6 +21,7 @@
   <exclude-pattern>web/app/mu-plugins/*</exclude-pattern>
   <exclude-pattern>web/app/plugins/*</exclude-pattern>
   <exclude-pattern>web/private/*</exclude-pattern>
+  <exclude-pattern>upstream-configuration/*</exclude-pattern>
   <!-- End Pantheon addition -->
 
   <!-- Show colors in console -->
@@ -31,4 +32,7 @@
 
   <!-- Use PSR-2 as a base -->
   <rule ref="PSR2"/>
+
+  <!-- See discussion https://github.com/WordPress/WordPress-Coding-Standards/issues/2035#issuecomment-1290768938 -->
+  <ini name="error_reporting" value="E_ALL&amp;~E_DEPRECATED"/>
 </ruleset>
