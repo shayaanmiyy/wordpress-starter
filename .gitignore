@@ -140,6 +140,7 @@ pantheon.upstream.yml
 *.zip
 *.tgz
 !web/wp/wp-includes/**/*.gz
+phpcs.xml
 
 # Logs and databases #
 ######################
