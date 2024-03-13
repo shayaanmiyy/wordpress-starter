@@ -1,0 +1,23 @@
+{
+    "admin_email": "admin@example.com",
+    "admin_email_lifespan": "1725692212",
+    "auto_update_core_dev": "enabled",
+    "auto_update_core_minor": "enabled",
+    "avatar_default": "mystery",
+    "avatar_rating": "G",
+    "blog_charset": "UTF-8",
+    "blog_public": "1",
+    "blogdescription": "",
+    "blogname": "Wordpress starter",
+    "date_format": "F j, Y",
+    "page_comments": "0",
+    "page_on_front": "0",
+    "permalink_structure": "\/%year%\/%monthnum%\/%day%\/%postname%\/",
+    "site_icon": "0",
+    "thumbnail_crop": "1",
+    "thumbnail_size_h": "150",
+    "thumbnail_size_w": "150",
+    "timezone_string": "",
+    "users_can_register": "0",
+    ".label": "Site Config"
+}
