@@ -45,8 +45,47 @@
       "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
     },
     {
-        "type": "path",
-        "url": "upstream-configuration"
+      "type": "composer",
+      "url": "https://connect.advancedcustomfields.com"
+    },
+    {
+      "type": "package",
+      "package": {
+          "name": "digitalpolygon/acf-extended-pro",
+          "version": "0.8.9.5",
+          "type": "wordpress-plugin",
+          "source": {
+              "url": "git@github.com:digitalpolygon/acf-extended-pro.git",
+              "type": "git",
+              "reference": "main"
+          }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "digitalpolygon/wp-mail-smtp-pro",
+        "version": "3.11.1",
+        "type": "wordpress-plugin",
+        "source": {
+          "url": "git@github.com:digitalpolygon/wp-mail-smtp-pro.git",
+          "type": "git",
+          "reference": "main"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+          "name": "hoppinger/advanced-custom-fields-wpcli",
+          "version": "4.0.2",
+          "type": "wordpress-plugin",
+          "source": {
+              "url": "https://github.com/hoppinger/advanced-custom-fields-wpcli.git",
+              "type": "git",
+              "reference": "master"
+          }
+      }
     }
   ],
   "require": {
@@ -61,11 +100,18 @@
     "roots/wp-password-bcrypt": "*",
     "wpackagist-theme/twentytwentytwo": "^1.2",
     "pantheon-systems/pantheon-mu-plugin": "*",
-    "pantheon-upstreams/upstream-configuration": "dev-main",
     "wpackagist-plugin/lh-hsts": "^1.25",
     "wpackagist-plugin/pantheon-advanced-page-cache": "*",
     "wpackagist-plugin/wp-native-php-sessions": "*",
-    "cweagans/composer-patches": "^1.7"
+    "cweagans/composer-patches": "^1.7",
+    "digitalpolygon/wp-mail-smtp-pro": "^3.11",
+    "digitalpolygon/acf-extended-pro": "0.8.9.5",
+    "wpackagist-plugin/wordpress-importer": "^0.8.2",
+    "wpengine/advanced-custom-fields-pro": "^6.2",
+    "wpackagist-plugin/revisionary": "^3.5",
+    "wpackagist-plugin/wordpress-seo": "22.0",
+    "wpackagist-plugin/wp-cfm": "^1.7",
+    "hoppinger/advanced-custom-fields-wpcli": "^4.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6.2",
@@ -105,9 +151,7 @@
     "enable-patching": true
   },
   "autoload": {
-      "classmap": [
-          "upstream-configuration/scripts/ComposerScripts.php"
-      ]
+
   },
   "scripts": {
     "post-root-package-install": [
@@ -125,12 +169,6 @@
     ],
     "test": [
       "phpcs"
-    ],
-    "upstream-require": [
-        "WordPressComposerManaged\\ComposerScripts::upstreamRequire"
     ]
-  },
-  "scripts-descriptions": {
-      "upstream-require": "Add a dependency to an upstream. See https://pantheon.io/docs/create-custom-upstream for information on creating custom upstreams."
   }
 }
