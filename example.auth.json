@@ -1,0 +1,11 @@
+{
+  "http-basic": {
+    "connect.advancedcustomfields.com": {
+      "username": "<username>",
+      "password": "https://leaf-home-mapletree.ddev.site/"
+    }
+  },
+  "github-oauth": {
+    "github.com": "<github-token>"
+  }
+}

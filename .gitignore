@@ -85,7 +85,8 @@ web/app/plugins/*
 # twenty-* themes by default. Any other Composer-managed themes should be
 # added to this list.
 web/app/themes/twenty*
-
+!web/app/themes/dp-timber-starter
+web/app/themes/dp-timber-starter/node_modules
 # Other WordPress files and directories
 # Any other files or directories that should not be version controlled go here.
 # A lot of stuff from the non-Composer-managed WordPress upstream is repeated
@@ -165,3 +166,6 @@ Thumbs.db
 # JetBrains #
 #############
 .idea/
+
+# Composer Auth.
+auth.json

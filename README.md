@@ -10,8 +10,20 @@ Links:
 
 1. Clone the project.
 2. Change into the project directory.
-3. Run `ddev init`.
-4. Navigate to `/wp-admin` to log in with `admin:admin`.
+3. Configure `auth.json`, Look at `example.auth.json` for file structure.
+4. Run `ddev init`.
+5. Navigate to `/wp-admin` to log in with `admin:admin`.
+
+### Configuring Project for Apple M1
+
+##### 1. Update `.ddev/docker-compose.local.yaml`
+Create the file if it doesn't already exist. Update it so that the `web` service has property `platform: linux/x86_64`.
+
+```yaml
+services:
+  web:
+    platform: linux/x86_64
+```
 
 ## Code scans
 
@@ -20,13 +32,17 @@ Links:
 #### To run the standard scan:
 
 1. Change to the project root directory.
-2. Run `docker run -it --rm -v $PWD:/app ghcr.io/lpeabody/phpcs-wordpress:2.3.0`.
+2. Run `ddev exec phpcs -s --standard="phpcs.ruleset.xml"`
 
 #### To modify the scan:
 
-1. Copy the `phpcs.xml.dist` file to `phpcs.xml`.
-2. Make modifications as necessary in `phpcs.xml`.
-3. Run `docker run -it --rm -v $PWD:/app ghcr.io/lpeabody/phpcs-wordpress:2.3.0`.
+1. Make modifications as necessary in `phpcs.ruleset.xml`.
+3. Run `ddev exec phpcs -s --standard="phpcs.ruleset.xml"`
+
+## DDev Commands
+
+### init
+Use `ddev init` command to setup your local from scratch
 
 To contribute the changes back, copy/paste what is needed from phpcs.xml into phpcs.xml.dist, commit your changes and
 make a pull request.

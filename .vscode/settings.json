@@ -1,0 +1,13 @@
+{
+	"debug.inlineValues": "off",
+	"phpsab.executablePathCBF": "./vendor/bin/phpcbf",
+	"phpsab.fixerArguments": ["-n", "--ignore=tests/*"],
+	"phpsab.fixerEnable": true,
+	"editor.defaultFormatter": null,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnSaveMode": "modificationsIfAvailable",
+	"editor.insertSpaces": false,
+	"html.format.indentInnerHtml": true,
+	"phpsab.composerJsonPath": "composer.json"
+}
