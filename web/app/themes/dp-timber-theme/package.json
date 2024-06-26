@@ -25,7 +25,8 @@
     "style-loader": "^4.0.0",
     "twig": "^1.17.1",
     "twigjs-loader": "^1.0.3",
-    "webpack": "^5.91.0"
+    "webpack": "^5.91.0",
+    "yaml-loader": "^0.8.1"
   },
   "scripts": {
     "dev": "yarn development",

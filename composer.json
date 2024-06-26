@@ -60,7 +60,7 @@
     "wpackagist-plugin/revisionary": "^3.5",
     "wpackagist-plugin/wordpress-seo": "22.0",
     "wpackagist-plugin/wp-cfm": "^1.7",
-    "timber/timber": "^2.1"
+    "timber/timber": "^2.2"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6.2",
