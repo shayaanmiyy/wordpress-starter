@@ -123,8 +123,9 @@ corepack_enable: true
 # See https://github.com/Masterminds/semver#checking-version-constraints for
 # supported constraint formats
 
-# working_dir:
-#   web: /var/www/html
+working_dir:
+  web: /var/www/html
+#   web: /mnt/c/Users/shaya/OneDrive/Desktop/wsl/Wordpress-Composer-Starter-Kit/web/app/dp-timber-theme
 #   db: /home
 # would set the default working directory for the web and db services.
 # These values specify the destination directory for ddev ssh and the

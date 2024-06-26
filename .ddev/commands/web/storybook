@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-cd web/app/themes/leaf-home
+cd web/app/themes/dp-timber-theme
 yarn storybook

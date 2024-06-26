@@ -12,6 +12,8 @@
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
+define( 'WP_DEBUG', true );
+
 /**
  * Pantheon platform settings. Everything you need should already be set.
  */
