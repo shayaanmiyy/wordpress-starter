@@ -1,5 +1,7 @@
 /** @type { import('@storybook/html').Preview } */
-import '../components/style.scss';
+import { themes } from "@storybook/theming";
+
+import "../components/style.scss";
 
 import "../assets/vendor/bootstrap/css/bootstrap.scss";
 import "../assets/vendor/bootstrap-icons/bootstrap-icons.scss";
@@ -11,52 +13,52 @@ import "../assets/css/main.scss";
 // Add viewports for our example device widths.
 const deviceViewports = {
   phone: {
-    name: 'Phone',
+    name: "Phone",
     styles: {
-      width: '390px',
-      height: '844px',
+      width: "390px",
+      height: "844px",
     },
   },
   phoneLarge: {
-    name: 'Large Phone',
+    name: "Large Phone",
     styles: {
-      width: '428px',
-      height: '926px',
+      width: "428px",
+      height: "926px",
     },
   },
   tablet: {
-    name: 'Tablet',
+    name: "Tablet",
     styles: {
-      width: '768px',
-      height: '1024px',
+      width: "768px",
+      height: "1024px",
     },
   },
   tabletLarge: {
-    name: 'Large Tablet',
+    name: "Large Tablet",
     styles: {
-      width: '1024px',
-      height: '1366px',
+      width: "1024px",
+      height: "1366px",
     },
   },
   desktop: {
-    name: 'Desktop 1200',
+    name: "Desktop 1200",
     styles: {
-      width: '1200px',
-      height: '1024px',
+      width: "1200px",
+      height: "1024px",
     },
   },
   desktopWide: {
-    name: 'Desktop 1440',
+    name: "Desktop 1440",
     styles: {
-      width: '1440px',
-      height: '1024px',
+      width: "1440px",
+      height: "1024px",
     },
   },
   desktopUltraWide: {
-    name: 'Desktop 1600',
+    name: "Desktop 1600",
     styles: {
-      width: '1600px',
-      height: '1024px',
+      width: "1600px",
+      height: "1024px",
     },
   },
 };
@@ -71,12 +73,23 @@ const preview = {
     },
     options: {
       storySort: {
-        method: 'alphabetical',
-        order: ['Introduction', 'Atoms', 'Molecules', 'Organisms', 'Templates', 'Pages', '*'],
+        method: "alphabetical",
+        order: [
+          "Introduction",
+          "Atoms",
+          "Molecules",
+          "Organisms",
+          "Templates",
+          "Pages",
+          "*",
+        ],
       },
     },
     viewport: {
       viewports: deviceViewports,
+    },
+    docs: {
+      themes: themes.light,
     },
   },
 };
